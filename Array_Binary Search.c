@@ -15,7 +15,10 @@ int arr_binarysearch(int arr[],int n,int element)
 	{
 		mid=(low+high)/2;
 		if(arr[mid]==element)
-			index=mid;	
+		{
+			index=mid;
+			break;
+		}
 		else if(arr[mid]<element)
 			low=mid+1;
 		else
@@ -29,7 +32,7 @@ int main()
 	int n=5;
 	int index;//Array index in which element is found
 	int element=77;//Elelment which you want to search
-	printf("Before Deletion - \n");
+	printf("Array Elements Are- \n");
 	display(arr,n); //Printing Array
 	index=arr_binarysearch(arr,n,element);
 	if(index==-1)
