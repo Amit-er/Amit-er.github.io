@@ -4,6 +4,6 @@ while(num>0):
     if j!=0 and j!=1:
         print("Number is not binary")
         break
-    num=//10
-    if ==0:
+    num=num//10
+    if num==0:
         print("Number is binary") 
